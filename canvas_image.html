@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas images</title>
+</head>
+<body>
+    <h2>normal image</h2>
+    <img src="klematis.jpg" id="image" height="200" width="300" alt="image not found!">
+    <h2>image within canvas</h2>
+
+    <canvas id="one" width="320" height="220" style="border: 2px solid green;">
+    </canvas>
+
+
+<script>
+    window.onload=function(){
+    var mycanvas=document.getElementById('one');
+    var context=mycanvas.getContext('2d');
+    var img=document.getElementById('image');
+    context.drawImage(img,30,10);
+    };
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas drawing</title>
+</head>
+<body>
+    <canvas id="one" width="200" height="100" style="border: 2px solid black;">
+    </canvas>
+    <canvas id="two" width="200" height="100" style="border: 5px solid green;">
+    </canvas>
+    <canvas id="three" width="200" height="100" style="border: 3px solid blue;">
+    </canvas>
+    
+
+    <script>
+        var mycanvas1=document.getElementById("one");
+        var context1=mycanvas1.getContext("2d");
+        context1.fillStyle="violet";
+        context1.fillRect(10,10,125,80);   /* x,y ,height,width */
+    
+        var mycanvas2=document.getElementById('two');
+        context2=mycanvas2.getContext('2d');
+        context2.moveTo(0,0);
+        context2.lineTo(200,120);
+        context2.stroke();  /* stroke() method draws a line */
+    
+        var mycanvas3=document.getElementById('three');
+        var context3=mycanvas3.getContext("2d");
+        context3.beginPath();
+        context3.arc(90,50,40,0,2*Math.PI)  /* width,height,radius,start angle,end angle */
+        context3.stroke();
+
+    </script>
+
+</body>
+</html>

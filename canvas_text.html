@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text in canvas</title>
+</head>
+<body>
+    <canvas id="one" height="200" width="300" style="border: 2px solid black;">
+    </canvas>
+    <canvas id="two" height="200" width="300" style="border: 2px solid black;">
+    </canvas>
+
+<script>
+    var mycanvas1=document.getElementById("one");
+    var mycontext1=mycanvas1.getContext("2d");
+    mycontext1.font="30px Ariel";
+    mycontext1.fillText("hello canvas",40,50);
+
+
+    var mycanvas2=document.getElementById('two');
+    var mycontext2=mycanvas2.getContext('2d');
+    mycontext2.font="30px Ariel";
+    mycontext2.fillStyle="red";
+    // mycontext2.textAlign="center";
+    mycontext2.fillText("welcome",two.width/2,two.height/2);
+
+
+
+
+</script>
+
+
+</body>
+</html>
